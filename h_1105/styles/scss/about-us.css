@@ -1,0 +1,26 @@
+/*关于我们*/
+div.row div.g-col-2
+{
+	display: inline-block;height: 500px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-2 div.g-card-content img{
+	height: 500px; width: 95%;
+}
+
+.s_title{height:44px;line-height:44px; border-bottom:1px solid #f0f0f0;padding:0px 20px }
+.s_title .name{background:url(../images/tit_bg.gif) no-repeat 0 center; height:44px;line-height:44px; padding-left:36px;font-size:20px;font-weight:normal; width:250px; float:left; display:inline;}
+
+.s_title .menu{width:750px; float:right;text-align:right;}
+.s_title .menu a{margin:0 12px;}
+.s_title .menu a:hover,.s_title .menu a.curr{color:#c7412d}
+.con_detail{padding:35px 55px; line-height:1.4em; color:#777}
+.fl{float:left;  display: inline;}
+.detail_tit{font-size:20px; color:#444; line-height:40px; padding-bottom:10px; font-weight:normal}
+.mr15{margin-top:15px;}
+
+.fr{float:right;  display: inline;}
+.tr{text-align:right;  display: inline;}
+.clear{ display:block; height:0; clear:both; content:""; overflow:hidden; visibility:hidden }
+.content{width:100%;}
+.wrap{width:1120px; margin:0 auto;}
+.pad0{padding:20px 0; background:#fff; margin-top:20px;}

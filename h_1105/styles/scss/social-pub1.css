@@ -1,0 +1,48 @@
+/*设置社会舆情的样式*/
+/*左侧导航栏样式*/
+div.nav-wrapper ul.c-sub-sidenav
+{
+	display: none;
+}
+/*
+div.nav-wrapper ul.c-side-nav li:hover ul
+{
+	display: block;
+}
+
+div.nav-wrapper ul.c-side-nav a.active
+{
+	color: #143EFE;	
+}*/
+/*开头三链接css*/
+div.page-header1
+{
+	height: 90px;width: 100%;
+}
+div.page-header1 a.c-ima-segment
+{
+	height: 90px;width:30%;padding-left: 3%;display:inline-block;font-size:16px ;
+	line-height: 90px;text-align: center;background-color: #E1E2E6;text-decoration:none;color: #000000;
+}
+div.page-header1 a.c-ima-segment.active
+{
+	background-color: #DFAB62;
+}
+/*时间css*/
+div.analyse-baoguo
+{
+	height: 90px;margin-left: 10px;margin-top: 20px;margin-bottom: 20px;margin-right: 10px;
+	background-color: white;
+}
+div.annlyse-time
+{
+	height: 35px;width: 100%;padding-top: 30px;
+}
+div.annlyse-time div {
+	display: inline-block;
+}
+div.annlyse-time a.btn-time
+{
+	padding-left: 20px;font-size: 16px;height: 33px;width: 20px;background-color: #D5B992;
+	line-height: 33px;text-align: center;
+}

@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+  <head>
+    <script src="scripts/echarts.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/scss/social-pub1.css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+   <script src="http://code.highcharts.com/modules/data.js"></script>   
+    <script src="http://code.highcharts.com/highcharts.js"></script> 
+  <script type="text/javascript">
+			$(document).ready(function(){
+$("ul.c-side-nav li").click(function(){
+	$("ul.c-side-nav li").each(function(){
+		$(this).children("ul").attr("class","c-sub-sidenav");
+	});
+$(this).children("ul").attr("class","tit-content1");
+});
+});
+	</script>
+  </head>
+  <body class="h-100">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">科技动态分析平台</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons">&#xE5C4;</i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                  <i class="material-icons">vertical_split</i>
+                  <span> 主 页</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pub-analy.html">
+                  <i class="material-icons">view_module</i>
+                  <span> 社 会 舆 情</span>
+                </a>
+               </li>
+               <ul class="c-side-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>制造领域</span>
+                </a>
+                <ul class="c-sub-sidenav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>智能制造</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>3D打印</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>机器人</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>工业4.0</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>新材料</span>
+                </a>
+                	</li>
+                </ul>
+              	</li>
+              	
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>健康领域</span>
+                </a>
+                <ul class="c-sub-sidenav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>健康医疗</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>数字健康</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>基因检测</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>生物医学</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>转化医学</span>
+                </a>
+                	</li>
+                </ul>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>信息领域</span>
+                </a>
+                 <ul class="c-sub-sidenav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>信息网络</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>大数据</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>云计算</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>物联网</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>智慧城市</span>
+                </a>
+                	</li>
+                </ul>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>能源领域</span>
+                </a>
+                 <ul class="c-sub-sidenav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>绿色能源</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>可再生能源</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>新能源汽车</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>储能</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>储能系统</span>
+                </a>
+                	</li>
+                </ul>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>软科学领域</span>
+                </a>
+                 <ul class="c-sub-sidenav">
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>技术预见</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>战略性新兴产业</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>科技创新中心</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>科技服务</span>
+                </a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" href="#">
+                  <i class="material-icons">table_chart</i>
+                  <span>科技评价</span>
+                </a>
+                	</li>
+                </ul>
+              	</li>
+              	
+               </ul>
+              <li class="nav-item">
+                <a class="nav-link " href="keywords-search.html">
+                  <i class="material-icons">table_chart</i>
+                  <span> 科 技 情 报</span>
+                </a>
+              </li>
+                            <li class="nav-item">
+                <a class="nav-link " href="hotwords-neph.html">
+                  <i class="material-icons">note_add</i>
+                  <span> 热 词 云 图</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="aboutus.html">
+                  <i class="material-icons">person</i>
+                  <span> 关 于 我 们</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+           
+          <!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            
+           <div class="page-header1">
+           	<a data-enumer="personal" class="c-ima-segment active" href="pub-analy.html">
+           		个人对科技动态的关注度趋势分析 
+           	</a>
+           	<a data-enumer="institution" class="c-ima-segment" href="pub-analy2.html">
+           		机构对科技动态的关注度趋势分析
+           	</a>
+           	<a data-enumer="compersion" class="c-ima-segment" href="pub-analy3.html">
+           		个人和机构对科技动态的关注度趋势分析
+           	</a>
+               <!--<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <h5 class="page-title">社会舆情分析结果</h5>
+                <span class="text-uppercase page-subtitle">社会舆情-趋势分析</span>
+              </div>
+               -->
+           </div>
+           <div class="analyse-baoguo">
+          	<div class="annlyse-time">
+          		<span> 发布时间</span>
+          		<div class="input-daterange">
+          			<input type="date" class="from-control-start" />
+          			<span>to</span>
+          			<input type="date" class="from-control-end"/>
+          		</div>
+          		<button type="button" class="mb-2 btn btn-sm btn-primary mr-1">分析</button>
+          	</div>
+          	</div>
+          	<!--<h4 class="m-0">分析结果数据：</h4>-->
+          	 <h3 class="page-title">分析结果数据：</h3>
+            <!-- End Page Header -->
+            <div class="row">
+              <!-- Users Stats -->
+              
+              <div class="col-lg-6 col-sm-12 mb-4">
+               <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">关注人群分布（%）：</h5>
+                     <div id="container1" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+<script type="text/javascript">
+		$(function () {
+    $('#container1').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['50后', '60后', '70后', '80后','90后','00后'],
+            title: {
+                text:''
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' '
+        },
+        plotOptions: {
+            column: {
+            	cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y/this.total*100;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '',
+            data: [
+                {
+                    y:1.1,total:100,color:'#F0E68C'
+                },
+                {
+                    y:3.95,total:100,color:'#AFEEEE'
+                },
+                {
+                    y:13.95,total:100,color:'#F4A460'
+                },
+                {
+                    y:28.95,total:100,color:'#FA8072'
+                },
+                {
+                	y:16.45,total:100,color:'#FFFF00'
+                },
+                {
+                	y:36.40,total:100,color:'#98FB98'
+                }
+            ]
+        }]
+    });
+});
+		</script >
+                  </div>
+                </div>
+                </div>
+             
+		 <div class="col-lg-6 col-sm-12 mb-4">
+               <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">关注人群性别比例（%）：</h5>
+                     <div id="container2" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+                     <script type="text/javascript">
+			$(function() {
+				$('#container2').highcharts({
+					chart: {
+						plotBackgroundColor: null,
+						plotBorderWidth: null,
+						plotShadow: false,
+						type: 'pie'
+					},
+					title: {
+						text: ''
+					},
+					tooltip: {
+						pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions: {
+						pie: {
+							allowPointSelect: true,
+							cursor: 'pointer',
+							dataLabels: {
+								enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+							},
+							// 显示图例
+							showInLegend: true
+						}
+					},
+					legend: {	// 图例显示位置
+						layout: 'vertical',
+						align: 'left',
+						verticalAlign: 'bottom',
+						x: 20,
+						y: 20,
+						floating: true,
+						backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'transparent'
+					},
+					series: [{
+						name: '',
+						colorByPoint: true,
+						data: [{
+							name: '男性',
+							y: 76.33,
+							color:'#87CEFA'
+						}, {
+							name: '女性',
+							y: 23.67,
+							color:'#F0E68C',
+							sliced: true,
+							selected: true
+						}]
+					}]
+				});
+			});
+		</script>
+
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              <!-- End Users By Device Stats -->
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">关注人群地域分布(%)</h5>
+                  </div>
+                  <div class="card-body">
+                  	 <div id="container3" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+<script type="text/javascript">
+		$(function () {
+    $('#container3').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['北京', '广东', '山东', '上海','浙江','江苏','安徽','四川','海外','其它'],
+            title: {
+                text:''
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' '
+        },
+        plotOptions: {
+            column: {
+            	cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y/this.total*100;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '地域分布',
+            data: [
+                {
+                    y:18.10,total:100,color:'#F0E68C'
+                },
+                {
+                    y:8.95,total:100,color:'#AFEEEE'
+                },
+                {
+                    y:5.95,total:100,color:'#F4A460'
+                },
+                {
+                    y:18.95,total:100,color:'#FA8072'
+                },
+                {
+                	y:16.45,total:100,color:'#FFFF00'
+                },
+                {
+                	y:18.20,total:100,color:'#98FB98'
+                },
+                {
+                	y:19.90,total:100,color:'#7B68EE'
+                },
+                {
+                	y:25.40,total:100,color:'#AFEEEE'
+                },
+                {
+                	y:14.44,total:100,color:'#BA55D3'
+                },
+                {
+                	y:36.40,total:100,color:'#DAA520'
+                }
+            ]
+        }]
+    });
+});
+		</script >
+                  	</div>
+                  	</div>
+                  	</div>
+                  	
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">关注人群学历分布(%)</h5>
+                  </div>
+                  <div class="card-body">
+                  	 <div id="container4" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+<script type="text/javascript">
+		$(function () {
+    $('#container4').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['其它学历', '初中学历', '高中学历', '大学学历','硕士学历','博士学历'],
+            title: {
+                text:''
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' '
+        },
+        plotOptions: {
+            column: {
+            	cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y/this.total*100;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '学历分布',
+            data: [
+                {
+                    y:38.10,total:100,color:'#F0E68C'
+                },
+                {
+                    y:1.95,total:100,color:'#AFEEEE'
+                },
+                {
+                    y:2.95,total:100,color:'#F4A460'
+                },
+                {
+                    y:21.95,total:100,color:'#FA8072'
+                },
+                {
+                	y:41.45,total:100,color:'#FFFF00'
+                },
+                {
+                	y:1.20,total:100,color:'#98FB98'
+                }
+            ]
+        }]
+    });
+});
+		</script >
+                  	</div>
+                  	</div>
+                  	</div>
+          <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
+            <span class="copyright ml-auto my-auto mr-2">版权所有 2016-2017 上海产业技术研究院 &上海科学院</span>
+          </footer>
+        </main>
+
+            </div>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+    <script src="scripts/extras.1.1.0.min.js"></script>
+    <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+    <script src="scripts/app/app-blog-overview.1.1.0.js"></script>
+    <script src="scripts/pub-anayle.js"></script>
+  </body>
+</html>

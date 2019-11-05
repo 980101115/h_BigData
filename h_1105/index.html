@@ -1,0 +1,994 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+    	 <link rel="stylesheet" href="styles/scss/home-index.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+     <script type="text/javascript" src="scripts/jquery-1.12.0.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script> 
+ <script type="text/javascript">
+		$(document).ready(function(){
+$("a.text-fiord-blue").click(function(){
+$("div#contion").css("display","block");
+}
+);
+$(".close1").click(function(){
+$("div#contion").css("display","none");
+});
+});
+	</script>
+  </head>
+  <body class="h-100">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">科技动态分析平台</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons">&#xE5C4;</i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                  <i class="material-icons">vertical_split</i>
+                  <span> 主 页</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pub-analy.html">
+                  <i class="material-icons">view_module</i>
+                  <span> 社 会 舆 情</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="keywords-search.html">
+                  <i class="material-icons">table_chart</i>
+                  <span> 科 技 情 报</span>
+                </a>
+              </li>
+                            <li class="nav-item">
+                <a class="nav-link " href="hotwords-neph.html">
+                  <i class="material-icons">note_add</i>
+                  <span> 热 词 云 图</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="aboutus.html">
+                  <i class="material-icons">person</i>
+                  <span> 关 于 我 们</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div class="main-navbar sticky-top bg-white">
+            <!-- Main Navbar -->
+            <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+              <form action="art-pages.html" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
+                <div class="input-group input-group-seamless ml-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <input class="navbar-search form-control" type="text" placeholder="搜索文章" aria-label="Search"> </div>
+              </form>
+              <ul class="navbar-nav border-left flex-row ">
+              	
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle mr-2" src="images/shanghai.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">上科院</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small">
+                    <a class="dropdown-item" href="aboutus.html">
+                      <i class="material-icons">&#xE7FD;</i> 关于我们</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">vertical_split</i> 反馈</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">note_add</i> 登入</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">
+                      <i class="material-icons text-danger">&#xE879;</i> 注销</a>
+                  </div>
+                </li>
+              </ul>
+              <nav class="nav">
+                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                  <i class="material-icons">&#xE5D2;</i>
+                </a>
+              </nav>
+            </nav>
+          </div>
+          <!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <h3 class="page-title">实时热词</h3>
+                <span class="text-uppercase page-subtitle">社会舆情关注与科技情报文献提及列表</span>
+              </div>
+            </div>
+            <!-- End Page Header -->
+            <!-- Small Stats Blocks -->
+            <div class="card-header border-bottom">
+                    <h6 class="m-0">制造领域</h6>
+                  </div>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">智能制造</span>
+                        <h6 class="stats-small__value count my-3">655,246</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">3D打印</span>
+                        <h6 class="stats-small__value count my-3">86,289</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">机器人</span>
+                        <h6 class="stats-small__value count my-3">560,753</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">新材料</span>
+                        <h6 class="stats-small__value count my-3">27,371</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-12 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">工业4.0</span>
+                        <h6 class="stats-small__value count my-3">40,579</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-header border-bottom">
+                    <h6 class="m-0">健康领域</h6>
+                  </div>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">健康医疗</span>
+                        <h6 class="stats-small__value count my-3">655,246</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">数字健康</span>
+                        <h6 class="stats-small__value count my-3">86,289</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">基因检测</span>
+                        <h6 class="stats-small__value count my-3">560,753</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">生物医学</span>
+                        <h6 class="stats-small__value count my-3">27,371</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-12 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">转化医学</span>
+                        <h6 class="stats-small__value count my-3">40,579</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-header border-bottom">
+                    <h6 class="m-0">信息领域</h6>
+                  </div>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">信息网络</span>
+                        <h6 class="stats-small__value count my-3">655,246</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">大数据</span>
+                        <h6 class="stats-small__value count my-3">86,289</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">云计算</span>
+                        <h6 class="stats-small__value count my-3">560,753</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">物联网</span>
+                        <h6 class="stats-small__value count my-3">27,371</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-12 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">智慧城市</span>
+                        <h6 class="stats-small__value count my-3">40,579</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-header border-bottom">
+                    <h6 class="m-0">能源领域</h6>
+                  </div>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">绿色能源</span>
+                        <h6 class="stats-small__value count my-3">655,246</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">可再生能源/span>
+                        <h6 class="stats-small__value count my-3">86,289</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">新能源汽车</span>
+                        <h6 class="stats-small__value count my-3">560,753</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">储能</span>
+                        <h6 class="stats-small__value count my-3">27,371</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-12 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">储能系统0</span>
+                        <h6 class="stats-small__value count my-3">40,579</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-header border-bottom">
+                    <h6 class="m-0">软科学领域</h6>
+                  </div>
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">技术预见</span>
+                        <h6 class="stats-small__value count my-3">655,246</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">战略性新兴产业</span>
+                        <h6 class="stats-small__value count my-3">86,289</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">科技创新中心</span>
+                        <h6 class="stats-small__value count my-3">560,753</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">科技服务</span>
+                        <h6 class="stats-small__value count my-3">27,371</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-12 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase">科技评价</span>
+                        <h6 class="stats-small__value count my-3">40,579</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-5"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Small Stats Blocks -->
+            <div class="row">
+            	 <!-- Users By Device Stats -->
+              
+              <div class="col-lg-6 col-sm-12 mb-4">
+               <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">月度热门新闻：</h5>
+                     <div id="container2" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+                     <script type="text/javascript">
+			$(function() {
+				$('#container2').highcharts({
+					chart: {
+						plotBackgroundColor: null,
+						plotBorderWidth: null,
+						plotShadow: false,
+						type: 'pie'
+					},
+					title: {
+						text: ''
+					},
+					tooltip: {
+						pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions: {
+						pie: {
+							allowPointSelect: true,
+							cursor: 'pointer',
+							dataLabels: {
+								enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+							},
+							// 显示图例
+							showInLegend: true
+						}
+					},
+					legend: {	// 图例显示位置
+						layout: 'vertical',
+						align: 'top',
+						verticalAlign: 'bottom',
+						x: 20,
+						y: 20,
+						floating: true,
+						backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'transparent'
+					},
+					series: [{
+						name: '',
+						colorByPoint: true,
+						data: [{
+							name: '制造',
+							y: 44,
+							color:'#87CEFA'
+						}, {
+							name: '信息',
+							y: 33,
+							color:'#00BFFF'
+						}, {
+							name:'健康',
+							y: 6,
+							color:'#7FFFD4'
+						}, {
+							name: '能源',
+							y: 12,
+							color:'#F4A460'
+						}, {
+							name: '软科技',
+							y: 5,
+							color:'#4169E1'
+						}]
+					}]
+				});
+			});
+		</script>
+
+                  </div>
+                </div>
+                </div>
+              <!-- Users Stats -->
+                <div class="col-lg-6 col-sm-12 mb-4">
+               <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">微博热门话题：</h5>
+                     <div id="container1" style="width: 100%; height: 400px; margin: 0 auto;background-color: white;"></div>
+                     <script type="text/javascript">
+			$(function() {
+				$('#container1').highcharts({
+					chart: {
+						plotBackgroundColor: null,
+						plotBorderWidth: null,
+						plotShadow: false,
+						type: 'pie'
+					},
+					title: {
+						text: ''
+					},
+					tooltip: {
+						pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions: {
+						pie: {
+							allowPointSelect: true,
+							cursor: 'pointer',
+							dataLabels: {
+								enabled: true,  //显示数量提示
+                    color: '#000000',
+                    formatter : function() {
+                        a = this.y;    
+                        return a.toFixed(2) + "%";  //返回百分比和个数
+                    }
+							},
+							// 显示图例
+							showInLegend: true
+						}
+					},
+					legend: {	// 图例显示位置
+						layout: 'vertical',
+						align: 'top',
+						verticalAlign: 'bottom',
+						x: 20,
+						y: 20,
+						floating: true,
+						backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'transparent'
+					},
+					series: [{
+						name: '',
+						colorByPoint: true,
+						data: [{
+							name: '制造',
+							y: 53,
+							color:'#87CEFA'
+						}, {
+							name: '信息',
+							y: 33,
+							color:'#00BFFF'
+						}, {
+							name:'健康',
+							y: 6,
+							color:'#7FFFD4'
+						}, {
+							name: '能源',
+							y: 8,
+							color:'#F4A460'
+						}]
+					}]
+				});
+			});
+		</script>
+
+                  </div>
+                </div>
+                </div>
+                
+              	 </div>
+              <!-- End Users By Device Stats -->
+              <!-- New Draft Component -->
+              <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">社会舆情关注与科技情报文献提及列表</h5>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0">
+                      <tbody>
+                        <tr>
+                          <td>关键词 </td>
+                          <td>智能制造 </td>
+                          <td>3D打印 </td>
+                          <td>机器人</td>
+                          <td>新材料 </td>
+                          <td>工业4.0 </td>
+                          <td>新能源汽车</td>
+                          <td>能源系统 </td>
+                          <td>绿色能源 </td>
+                          <td>储能 </td>
+                          <td>信息网络 </td>
+                          <td>云计算 </td>
+                          <td>数字健康 </td>
+                          <td>基因检测 </td>
+                          <td>战略性新兴产业 </td>
+                        </tr>
+                        <tr>
+                          <td>社会舆情 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                        </tr>
+                        <tr>
+                          <td>文献提及 </td>
+                          <td>16253 </td>
+                          <td>4561</td>
+                          <td>3478 </td>
+                          <td>9807 </td>
+                          <td>45355 </td>
+                          <td>13432 </td>
+                          <td>2343 </td>
+                          <td>14669 </td>
+                          <td>6542 </td>
+                          <td>89732 </td>
+                          <td>45622 </td>
+                          <td>15543 </td>
+                          <td>45578 </td>
+                          <td>97675 </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+           <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">英文关键词舆情关注列表</h5>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0">
+                      <tbody>
+                        <tr>
+                          <td>关键词 </td>
+                          <td>Intelligent manuf </td>
+                          <td>3D printing</td>
+                          <td>robot</td>
+                          <td>new material </td>
+                          <td>Industrial 4.0</td>
+                          <td>new energy aut</td>
+                          <td>Energy system </td>
+                        </tr>
+                        <tr>
+                          <td>总数 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+           </div>
+              	
+              <!-- End Discussions Component -->
+              <!-- Top Referrals Component 
+             
+              <!-- 五大展示-->
+             	            <div class="row">
+              <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-post__image" style="background-image: url('images/201503261529496788.jpg');">
+                    <a href="" class="card-post__category badge badge-pill badge-info" οnclick="openwin()">制造领域</a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">李培根:实业今天不做智能制造五年十年以后肯定落后</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">伯朗特2019年10月机器人产量下降 2.91%</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">第二届中国新材料产业发展大会即将在长沙举行 汇集行业顶尖专家</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">江苏江阴打造一流金属新材料产业发展高地 创新研究院启用</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">丰田参与的“纸浆跑车”,配武士刀方向盘和樱花内饰</a>
+                    </h6>
+                   <a class="text-muted" href="news-pages.html">更多动态>></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-post__image" style="background-image: url('images/t01ec4337413064e28e.png');">
+                    <a href="news-pages.html" class="card-post__category badge badge-pill badge-dark">健康领域</a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">北大分子医学研究所肖瑞平:医生型科学家有义务去平衡重大疾病研究</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">金砖国家生物技术与生物医学创新合作大会</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">金砖国家生物技术与生物医学创新合作大会在泰州开幕</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">彭瑞骢:风雨人生路 医教事业心</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">佰美基因:用基因检测技术建立儿童安全用药屏障</a>
+                    </h6>
+                    <a class="text-muted" href="news-pages.html">更多动态>></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <div class="row">
+              <div class="col-lg-4">
+                <div class="card card-small card-post card-post--1">
+                  <div class="card-post__image" style="background-image: url('images/timg.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-warning">信息领域</a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">2019首届全国制造业(汽车)质量大数据和管理技术高峰论坛召开</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">【媒体视点】涉案金额逾88亿元!上海税警利用大数据平台破获特大</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">家居智能化的实用市场前景:是先有物联网,还是先有功能? </a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">上海大数据平台联通医疗机构与保险机构 健康信息一步到位</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">双汇发展董事长万隆:将打造信息集中...</a>
+                    </h6>
+                    <a class="text-muted" href="news-pages.html">更多动态>></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-small card-post card-post--1">
+                  <div class="card-post__image" style="background-image: url('images/635562441853108682266.jpg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-info">能源领域</a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">点亮冬奥,世界首条可再生能源柔性直流电网在张北主体竣工</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">奔向100%可再生能源</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">龙岗区平湖纯电动新能源汽车品牌-诚信互利</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">天津可再生能源国家政策</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">丰田汽车重点研究新能源汽车市场</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">2020广州新能源汽车展-中国纯电动汽车行业领航者  </a>
+                    </h6>
+                    <a class="text-muted" href="news-pages.html">更多动态>></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-small card-post card-post--1">
+                  <div class="card-post__image" style="background-image: url('images/0854BBF2F0D7F6DD921A98183B8B2ED7E3AAA532_size60_w994_h650.jpeg');">
+                    <a href="#" class="card-post__category badge badge-pill badge-primary">软科学领域</a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">环江:用科技服务提高精准帮扶见实效</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">上海这四个地方,蕴含着这座城市一年加速跑的“原动力</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">比克未来城市合伙人计划启动,普通人怎么抓住新能源物流红利?</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">中国生物科技服务(08037)CAR-T临床研究获重大进展</a>
+                    </h6>
+                    <h6 class="card-title">
+                      <a class="text-fiord-blue" href="#">潍坊 自主创新练内功 -科技服务- 中国高新网 </a>
+                    </h6>
+                    
+                    <a class="text-muted" href="news-pages.html">更多动态>></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+         
+         <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
+            <span class="copyright ml-auto my-auto mr-2">版权所有 2016-2017 上海产业技术研究院 &上海科学院</span>
+          </footer>
+        </main>
+      <div id="contion" style="display: none;">
+		<div class="modal-header1">
+			    <span class="close1">&times;</span>
+			    <h2>首届健康医疗大数据发展高峰论坛在昌开幕</h2>
+			  </div>
+	<iframe name="add_teacher"  scrolling="no" style="" frameborder="0" src="http://news.ncnews.com.cn/ncxw/zhxw/201910/t20191025_1495015.html">
+	</iframe>
+	</div>
+      </div>
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+    <script src="scripts/extras.1.1.0.min.js"></script>
+    <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+    <script src="scripts/app/app-blog-overview.1.1.0.js"></script>
+  </body>
+</html>

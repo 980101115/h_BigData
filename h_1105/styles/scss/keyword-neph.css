@@ -1,0 +1,26 @@
+/*关键词云图*/
+div.row.title-bar {
+	height: 50px;width: 100%;background-color: white;margin-left: 20px;margin-top:20px ;
+}
+div.row.title-bar a
+{
+	height: 50px;width: 5%;line-height: 50px;font-size: 20px;margin-left: 50px;
+}
+div.row.title-bar span.g-card-title
+{
+	height: 50px;line-height: 50px;font-size: 20px;
+}
+div.row div.g-col
+{
+	display: inline-block;height: 550px; width:45%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col div.g-card-content img{
+	height: 450px; width: 95%;margin-top: 40px;
+}
+div.row div.g-col-1
+{
+	display: inline-block;height: 370px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-1 div.g-card-content img{
+	height: 370px; width: 95%;
+}

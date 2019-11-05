@@ -1,0 +1,1091 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>热词云图</title>
+    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
+    	<link rel="stylesheet" href="styles/scss/sidenav.css" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://code.highcharts.com.cn/jquery/jquery-1.8.3.min.js"></script>
+		<script src="https://code.highcharts.com.cn/highstock/highstock.js"></script>
+		<script src="https://code.highcharts.com.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com.cn/highcharts/modules/wordcloud.js"></script>
+		<script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+$("ul.c-side-nav li").click(function(){
+	$("ul.c-side-nav li").each(function(){
+		$(this).children("a").attr("class","nav-link");
+	});
+$(this).children("a").attr("class","nav-link active");
+});
+});
+	</script>
+  </head>
+  <body class="h-100">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">科技动态分析平台</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons">&#xE5C4;</i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                  <i class="material-icons">vertical_split</i>
+                  <span> 主 页</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pub-analy.html">
+                  <i class="material-icons">view_module</i>
+                  <span> 社 会 舆 情</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="keywords-search.html">
+                  <i class="material-icons">table_chart</i>
+                  <span> 科 技 情 报</span>
+                </a>
+              </li>
+                            <li class="nav-item">
+                <a class="nav-link " href="hotwords-neph.html">
+                  <i class="material-icons">note_add</i>
+                  <span> 热 词 云 图</span>
+                </a>
+              </li>
+              <ul class="c-side-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>制造领域</span>
+                </a>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>健康领域</span>
+                </a>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>信息领域</span>
+                </a>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>能源领域</span>
+                </a>
+              	</li>
+              	<li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>软科学领域</span>
+                </a>
+              	</li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">
+                  <i class="material-icons">person</i>
+                  <span> 关 于 我 们</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+           <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <h3 class="page-title">制造领域 - 热词云图分析</h3>
+                <span class="text-uppercase page-subtitle">科技情报的热词云图为该领域中出现关键词的提及量</span>
+                <span class="text-uppercase page-subtitle">社会舆情的热词云图数量为该领域中的关键词抓取信息的分词结果的正向提及量</span>
+              </div>
+            </div>
+            <!-- End Page Header -->
+           	<div class="row">
+              <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">社会舆情 - 热词云图</h5>
+                    <div id="container1"></div>
+                    <span class="text-muted">2019-09-18 21:00 ~ 2019-10-18 21:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="card card-small card-post card-post--aside card-post--1">
+                  <div class="card-body">
+                    <h5 class="card-title">科技情报 - 热词云图</h5>
+                    <div id="container2"></div>
+                    <span class="text-muted">2019-07-20 21:00 更新</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">关键词详情</h5>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <td scope="col" class="border-0" align="left">一级关键词</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-primary mr-2">健康医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-primary mr-2">数字健康</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-primary mr-2">基因检测</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-primary mr-2">生物医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-primary mr-2">转化医学</button></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <td scope="col" class="border-0" align="left">二级关键词</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">数字健康</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因检测</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">转化医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">精准医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">医疗器械</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">可穿戴设备</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">移动医疗</button></a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">远程医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">数字医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">云医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">健康云</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">高通量测序</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">二代测序</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">疾病防控信息系统</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因组学</button></a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因测序</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因芯片</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">系统生物学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">分子生物学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物治疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">细胞/干细胞治疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">免疫疗法</button></a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">传染病预警</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物标志物</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">伴随诊断</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基础医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">临床医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物信息学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">智慧养老</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">智慧医疗</button></a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">互联网医疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">靶向治疗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因编程</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">基因筛查</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物样本</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">合成生物</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">再生医学</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生命科学</button></a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">中西医结合</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生物工程</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">公共卫生</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">生殖健康</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">创新药物</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">新型疫苗</button></a></td>
+                          <td><a href="keyword-neph.html"><button type="button" class="mb-2 btn btn-info mr-2">重大疾病</button></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">社会舆情热词云图中前8个波动最大的热词波动曲线</h5>
+                    <span class="copyright ml-auto my-auto mr-2">根据热词变化频率,展示结果90天更新一次</span>
+                    <div id="container3" style="min-width:400px;height:400px"></div>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+									
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h5 class="m-0">热词提及量表</h5>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0">
+                      <tbody>
+                        <tr>
+                          <td>制造领域 </td>
+                          <td>工业 </td>
+                          <td>中国 </td>
+                          <td>智能 </td>
+                          <td>技术 </td>
+                          <td>科技 </td>
+                          <td>理由 </td>
+                          <td>产业 </td>
+                          <td>企业 </td>
+                          <td>制造 </td>
+                          <td>视频 </td>
+                          <td>发展 </td>
+                          <td>全文 </td>
+                          <td>创新 </td>
+                          <td>项目 </td>
+                          <td>材料 </td>
+                        </tr>
+                        <tr>
+                          <td>提及量 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                          <td>30443 </td>
+                        </tr>
+                        <tr>
+                          <td>能源领域 </td>
+                          <td>新能源 </td>
+                          <td>能源 </td>
+                          <td>汽车 </td>
+                          <td>中国 </td>
+                          <td>发展 </td>
+                          <td>电池 </td>
+                          <td>技术 </td>
+                          <td>项目 </td>
+                          <td>全文 </td>
+                          <td>公司 </td>
+                          <td>全球 </td>
+                          <td>发电 </td>
+                          <td>补贴 </td>
+                          <td>企业 </td>
+                          <td>产业 </td>
+                        </tr>
+                        <tr>
+                          <td>提及量 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                          <td>30443 </td>
+                        </tr>
+                        <tr>
+                          <td>信息领域 </td>
+                          <td>中国 </td>
+                          <td>技术 </td>
+                          <td>互联网 </td>
+                          <td>数据 </td>
+                          <td>智慧 </td>
+                          <td>发展 </td>
+                          <td>平台 </td>
+                          <td>大数据 </td>
+                          <td>智能 </td>
+                          <td>全文 </td>
+                          <td>产业 </td>
+                          <td>科技 </td>
+                          <td>企业 </td>
+                          <td>公司 </td>
+                          <td>服务 </td>
+                        </tr>
+                        <tr>
+                          <td>提及量 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                          <td>30443 </td>
+                        </tr>
+                        <tr>
+                          <td>健康领域 </td>
+                          <td>基因 </td>
+                          <td>健康 </td>
+                          <td>生物 </td>
+                          <td>医学 </td>
+                          <td>中国 </td>
+                          <td>全文 </td>
+                          <td>技术 </td>
+                          <td>研究 </td>
+                          <td>检测 </td>
+                          <td>癌症 </td>
+                          <td>治疗 </td>
+                          <td>疾病 </td>
+                          <td>医疗 </td>
+                          <td>美国 </td>
+                          <td>公司 </td>
+                        </tr>
+                        <tr>
+                          <td>提及量 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                          <td>30443 </td>
+                        </tr>
+                        <tr>
+                          <td>软科学领域 </td>
+                          <td>创新 </td>
+                          <td>发展 </td>
+                          <td>科技 </td>
+                          <td>建设 </td>
+                          <td>全文 </td>
+                          <td>企业 </td>
+                          <td>上海 </td>
+                          <td>北京 </td>
+                          <td>中心 </td>
+                          <td>项目 </td>
+                          <td>全球 </td>
+                          <td>国家 </td>
+                          <td>中国 </td>
+                          <td>全球 </td>
+                          <td>世界 </td>
+                        </tr>
+                        <tr>
+                          <td>提及量 </td>
+                          <td>107251 </td>
+                          <td>75254 </td>
+                          <td>55325 </td>
+                          <td>49883 </td>
+                          <td>45984 </td>
+                          <td>42583 </td>
+                          <td>41137 </td>
+                          <td>37961 </td>
+                          <td>37594 </td>
+                          <td>35948 </td>
+                          <td>32893 </td>
+                          <td>32520 </td>
+                          <td>31349 </td>
+                          <td>31126 </td>
+                          <td>30443 </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           
+
+          <!-- / .main-navbar -->
+         
+          <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
+            <span class="copyright ml-auto my-auto mr-2">版权所有 2016-2017 上海产业技术研究院 &上海科学院</span>
+          </footer>
+        </main>
+      </div>
+    </div>
+   </div>
+<script language="JavaScript">
+function sky1(){
+	var data = [{"count":1000,"keyword":"健康"},{"count":700,"keyword":"医生"},{"count":800,"keyword":"基因"},{"count":650,"keyword":"检测"},{"count":600,"keyword":"医疗中国"},{"count":400,"keyword":"患者"},{"count":400,"keyword":"项目"},{"count":400,"keyword":"北京"},{"count":200,"keyword":"今天宝宝"},{"count":200,"keyword":"产业"}];
+//var data = eval('(' + data1 + ')');
+	var len=eval(data).length;
+	var arr=[];
+     	for(var i=0;i<len;i++){
+	  		arr[i] =[];
+	  		arr[i][0]=data[i].keyword;
+	  		arr[i][1]=data[i].count;}
+	Highcharts.chart('container1', {
+		series: [{
+			type: 'wordcloud',
+			data: arr
+		}],
+		title: {
+			text: ''
+		}
+	});
+}sky1();
+function sky2(){
+	var data = [{"count":1000,"keyword":"研究"},{"count":700,"keyword":"方法"},{"count":800,"keyword":"发展"},{"count":650,"keyword":"临床"},{"count":600,"keyword":"治疗"},{"count":400,"keyword":"分析"},{"count":400,"keyword":"项目系统"},{"count":400,"keyword":"问题"},{"count":200,"keyword":"服务"},{"count":200,"keyword":"水平"}];
+//var data = eval('(' + data1 + ')');
+	var len=eval(data).length;
+	var arr=[];
+     	for(var i=0;i<len;i++){
+	  		arr[i] =[];
+	  		arr[i][0]=data[i].keyword;
+	  		arr[i][1]=data[i].count;}
+	Highcharts.chart('container2', {
+		series: [{
+			type: 'wordcloud',
+			data: arr
+		}],
+		title: {
+			text: ''
+		}
+	});
+}sky2();
+function sky3(){
+	var series =  [
+      {
+         name: '中国',
+         data: [[1147651200000,67.79],
+[1147737600000,64.98],
+[1147824000000,65.26],
+[1147910400000,63.18],
+[1147996800000,64.51],
+[1148256000000,63.38],
+[1148342400000,63.15],
+[1148428800000,63.34],
+[1148515200000,64.33],
+[1148601600000,63.55],
+[1148947200000,61.22],
+[1149033600000,59.77],
+/* Jun 2006 */
+[1149120000000,62.17],
+[1149206400000,61.66],
+[1149465600000,60.00],
+[1149552000000,59.72],
+[1149638400000,58.56],
+[1149724800000,60.76],
+[1149811200000,59.24],
+[1150070400000,57.00],
+[1150156800000,58.33],
+[1150243200000,57.61],
+[1150329600000,59.38],
+[1150416000000,57.56],
+[1150675200000,57.20],
+[1150761600000,57.47],
+[1150848000000,57.86],
+[1150934400000,59.58],
+[1151020800000,58.83],
+[1151280000000,58.99],
+[1151366400000,57.43],
+[1151452800000,56.02],
+[1151539200000,58.97],
+[1151625600000,57.27],
+/* Jul 2006 */
+[1151884800000,57.95],
+[1152057600000,57.00],
+[1152144000000,55.77],
+[1152230400000,55.40],
+[1152489600000,55.00],
+[1152576000000,55.65],
+[1152662400000,52.96],
+[1152748800000,52.25],
+[1152835200000,50.67],
+[1153094400000,52.37],
+[1153180800000,52.90],
+[1153267200000,54.10],
+[1153353600000,60.50],
+[1153440000000,60.72],
+[1153699200000,61.42],
+[1153785600000,61.93],
+[1153872000000,63.87],
+[1153958400000,63.40],
+[1154044800000,65.59],
+[1154304000000,67.96],
+/* Aug 2006 */
+[1154390400000,67.18],
+[1154476800000,68.16],
+[1154563200000,69.59],
+[1154649600000,68.30],
+[1154908800000,67.21],
+[1154995200000,64.78],
+[1155081600000,63.59],
+[1155168000000,64.07],
+[1155254400000,63.65],
+[1155513600000,63.94],
+[1155600000000,66.45],
+[1155686400000,67.98],
+[1155772800000,67.59],
+[1155859200000,67.91],
+[1156118400000,66.56],
+[1156204800000,67.62],
+[1156291200000,67.31],
+[1156377600000,67.81],
+[1156464000000,68.75],
+[1156723200000,66.98],
+[1156809600000,66.48],
+[1156896000000,66.96],
+[1156982400000,67.85],
+/* Sep 2006 */
+[1157068800000,68.38],
+[1157414400000,71.48],
+[1157500800000,70.03],
+[1157587200000,72.80],
+[1157673600000,72.52],
+[1157932800000,72.50],
+[1158019200000,72.63],
+[1158105600000,74.20],
+[1158192000000,74.17],
+[1158278400000,74.10],
+[1158537600000,73.89],
+[1158624000000,73.77],
+[1158710400000,75.26],
+[1158796800000,74.65],
+[1158883200000,73.00],
+[1159142400000,75.75],
+[1159228800000,77.61],
+[1159315200000,76.41],
+[1159401600000,77.01],
+[1159488000000,76.98],
+/* Oct 2006 */
+[1159747200000,74.86],
+[1159833600000,74.08],
+[1159920000000,75.38],
+[1160006400000,74.83],
+[1160092800000,74.22],
+[1160352000000,74.63],
+[1160438400000,73.81],
+[1160524800000,73.23],
+[1160611200000,75.26],
+[1160697600000,75.02],
+[1160956800000,75.40],
+[1161043200000,74.29],
+[1161129600000,74.53],
+[1161216000000,78.99],
+[1161302400000,79.95],
+[1161561600000,81.46],
+[1161648000000,81.05],
+[1161734400000,81.68],
+[1161820800000,82.19],
+[1161907200000,80.41],
+[1162166400000,80.42],
+[1162252800000,81.08],
+/* Nov 2006 */
+[1162339200000,79.16],
+[1162425600000,78.98],
+[1162512000000,78.29],
+[1162771200000,79.71],
+[1162857600000,80.51],
+[1162944000000,82.45],
+[1163030400000,83.34],
+[1163116800000,83.12],
+[1163376000000,84.35],
+[1163462400000,85.00],
+[1163548800000,84.05],
+[1163635200000,85.61],
+[1163721600000,85.85],
+[1163980800000,86.47],
+[1164067200000,88.60],
+[1164153600000,90.31],
+[1164326400000,91.63],
+[1164585600000,89.54],
+[1164672000000,91.81],
+[1164758400000,91.80],
+[1164844800000,91.66],
+/* Dec 2006 */
+[1164931200000,91.32],
+[1165190400000,91.12],
+[1165276800000,91.27],
+[1165363200000,89.83],
+[1165449600000,87.04],
+[1165536000000,88.26],
+[1165795200000,88.75],
+[1165881600000,86.14],
+[1165968000000,89.05],
+[1166054400000,88.55],
+[1166140800000,87.72],
+[1166400000000,85.47],
+[1166486400000,86.31],
+[1166572800000,84.76],
+[1166659200000,82.90],
+[1166745600000,82.20],
+[1167091200000,81.51],
+[1167177600000,81.52],
+[1167264000000,80.87],
+[1167350400000,84.84],
+/* Jan 2007 */
+[1167782400000,83.80],
+[1167868800000,85.66],
+[1167955200000,85.05],
+[1168214400000,85.47],
+[1168300800000,92.57],
+[1168387200000,97.00],
+[1168473600000,95.80],
+[1168560000000,94.62],
+[1168905600000,97.10],
+[1168992000000,94.95],
+[1169078400000,89.07],
+[1169164800000,88.50],
+[1169424000000,86.79],
+[1169510400000,85.70],
+[1169596800000,86.70],
+[1169683200000,86.25],
+[1169769600000,85.38],
+[1170028800000,85.94],
+[1170115200000,85.55],
+[1170201600000,85.73],
+/* Feb 2007 */
+[1170288000000,84.74],
+[1170374400000,84.75],
+[1170633600000,83.94],
+[1170720000000,84.15],
+[1170806400000,86.15],
+[1170892800000,86.18],
+[1170979200000,83.27],
+[1171238400000,84.88],
+[1171324800000,84.63],
+[1171411200000,85.30],
+[1171497600000,85.21],
+[1171584000000,84.83],
+[1171929600000,85.90],
+[1172016000000,89.20],
+[1172102400000,89.51],
+[1172188800000,89.07],
+[1172448000000,88.65],
+[1172534400000,83.93],
+[1172620800000,84.61],
+/* Mar 2007 */
+[1172707200000,87.06],
+[1172793600000,85.41],
+[1173052800000,86.32],
+[1173139200000,88.19],
+[1173225600000,87.72],
+[1173312000000,88.00],
+[1173398400000,87.97],
+[1173657600000,89.87],
+[1173744000000,88.40],
+[1173830400000,90.00],
+[1173916800000,89.57],
+[1174003200000,89.59],
+[1174262400000,91.13],
+[1174348800000,91.48],
+[1174435200000,93.87],
+[1174521600000,93.96],
+[1174608000000,93.52],
+[1174867200000,95.85],
+[1174953600000,95.46],
+[1175040000000,93.24],
+[1175126400000,93.75],
+[1175212800000,92.91],
+/* Apr 2007 */
+[1175472000000,93.65],
+[1175558400000,94.50],
+[1175644800000,94.27],
+[1175731200000,94.68],
+[1176076800000,93.65],
+[1176163200000,94.25],
+[1176249600000,92.59],
+[1176336000000,92.19],
+[1176422400000,90.24],
+[1176681600000,91.43],
+[1176768000000,90.35],
+[1176854400000,90.40],
+[1176940800000,90.27],
+[1177027200000,90.97],
+[1177286400000,93.51],
+[1177372800000,93.24],
+[1177459200000,95.35],
+[1177545600000,98.84],
+[1177632000000,99.92],
+[1177891200000,99.80],
+/* May 2007 */
+[1177977600000,99.47],
+[1178064000000,100.39],
+[1178150400000,100.40],
+[1178236800000,100.81],
+[1178496000000,103.92],
+[1178582400000,105.06],
+[1178668800000,106.88],
+[1178755200000,107.34],
+[1178841600000,108.74],
+[1179100800000,109.36],
+[1179187200000,107.52],
+[1179273600000,107.34],
+[1179360000000,109.44],
+[1179446400000,110.02],
+[1179705600000,111.98],
+[1179792000000,113.54],
+[1179878400000,112.89],
+[1179964800000,110.69],
+[1180051200000,113.62],
+[1180396800000,114.35],
+[1180483200000,118.77],
+[1180569600000,121.19]]
+      }, 
+      {
+         name: '科技',
+         data: [[1147651200000,67.79],
+[1147737600000,74.98],
+[1147824000000,75.26],
+[1147910400000,73.18],
+[1147996800000,74.51],
+[1148256000000,73.38],
+[1148342400000,73.15],
+[1148428800000,73.34],
+[1148515200000,74.33],
+[1148601600000,73.55],
+[1148947200000,71.22],
+[1149033600000,79.77],
+/* Jun 2006 */
+[1149120000000,72.17],
+[1149206400000,71.66],
+[1149465600000,70.00],
+[1149552000000,79.72],
+[1149638400000,78.56],
+[1149724800000,70.76],
+[1149811200000,79.24],
+[1150070400000,77.00],
+[1150156800000,78.33],
+[1150243200000,77.61],
+[1150329600000,79.38],
+[1150416000000,77.56],
+[1150675200000,77.20],
+[1150761600000,77.47],
+[1150848000000,77.86],
+[1150934400000,79.58],
+[1151020800000,78.83],
+[1151280000000,78.99],
+[1151366400000,77.43],
+[1151452800000,76.02],
+[1151539200000,78.97],
+[1151625600000,77.27],
+/* Jul 2006 */
+[1151884800000,77.95],
+[1152057600000,67.00],
+[1152144000000,65.77],
+[1152230400000,65.40],
+[1152489600000,65.00],
+[1152576000000,65.65],
+[1152662400000,62.96],
+[1152748800000,62.25],
+[1152835200000,60.67],
+[1153094400000,62.37],
+[1153180800000,62.90],
+[1153267200000,64.10],
+[1153353600000,70.50],
+[1153440000000,70.72],
+[1153699200000,71.42],
+[1153785600000,71.93],
+[1153872000000,73.87],
+[1153958400000,73.40],
+[1154044800000,75.59],
+[1154304000000,77.96],
+/* Aug 2006 */
+[1154390400000,77.18],
+[1154476800000,78.16],
+[1154563200000,79.59],
+[1154649600000,78.30],
+[1154908800000,77.21],
+[1154995200000,74.78],
+[1155081600000,73.59],
+[1155168000000,74.07],
+[1155254400000,73.65],
+[1155513600000,73.94],
+[1155600000000,66.45],
+[1155686400000,77.98],
+[1155772800000,77.59],
+[1155859200000,77.91],
+[1156118400000,76.56],
+[1156204800000,77.62],
+[1156291200000,77.31],
+[1156377600000,77.81],
+[1156464000000,78.75],
+[1156723200000,76.98],
+[1156809600000,76.48],
+[1156896000000,76.96],
+[1156982400000,77.85],
+/* Sep 2006 */
+[1157068800000,78.38],
+[1157414400000,81.48],
+[1157500800000,80.03],
+[1157587200000,82.80],
+[1157673600000,82.52],
+[1157932800000,82.50],
+[1158019200000,82.63],
+[1158105600000,84.20],
+[1158192000000,84.17],
+[1158278400000,84.10],
+[1158537600000,83.89],
+[1158624000000,83.77],
+[1158710400000,85.26],
+[1158796800000,84.65],
+[1158883200000,83.00],
+[1159142400000,85.75],
+[1159228800000,87.61],
+[1159315200000,86.41],
+[1159401600000,87.01],
+[1159488000000,86.98],
+/* Oct 2006 */
+[1159747200000,84.86],
+[1159833600000,84.08],
+[1159920000000,85.38],
+[1160006400000,84.83],
+[1160092800000,84.22],
+[1160352000000,84.63],
+[1160438400000,83.81],
+[1160524800000,83.23],
+[1160611200000,85.26],
+[1160697600000,85.02],
+[1160956800000,85.40],
+[1161043200000,84.29],
+[1161129600000,84.53],
+[1161216000000,88.99],
+[1161302400000,89.95],
+[1161561600000,81.46],
+[1161648000000,91.05],
+[1161734400000,91.68],
+[1161820800000,92.19],
+[1161907200000,90.41],
+[1162166400000,90.42],
+[1162252800000,91.08],
+/* Nov 2006 */
+[1162339200000,99.16],
+[1162425600000,88.98],
+[1162512000000,88.29],
+[1162771200000,89.71],
+[1162857600000,90.51],
+[1162944000000,92.45],
+[1163030400000,93.34],
+[1163116800000,93.12],
+[1163376000000,94.35],
+[1163462400000,95.00],
+[1163548800000,94.05],
+[1163635200000,95.61],
+[1163721600000,95.85],
+[1163980800000,96.47],
+[1164067200000,98.60],
+[1164153600000,100.31],
+[1164326400000,101.63],
+[1164585600000,99.54],
+[1164672000000,101.81],
+[1164758400000,101.80],
+[1164844800000,101.66],
+/* Dec 2006 */
+[1164931200000,101.32],
+[1165190400000,101.12],
+[1165276800000,101.27],
+[1165363200000,99.83],
+[1165449600000,97.04],
+[1165536000000,98.26],
+[1165795200000,98.75],
+[1165881600000,96.14],
+[1165968000000,99.05],
+[1166054400000,98.55],
+[1166140800000,97.72],
+[1166400000000,95.47],
+[1166486400000,96.31],
+[1166572800000,94.76],
+[1166659200000,92.90],
+[1166745600000,92.20],
+[1167091200000,91.51],
+[1167177600000,91.52],
+[1167264000000,90.87],
+[1167350400000,94.84],
+/* Jan 2007 */
+[1167782400000,93.80],
+[1167868800000,95.66],
+[1167955200000,95.05],
+[1168214400000,95.47],
+[1168300800000,92.57],
+[1168387200000,107.00],
+[1168473600000,105.80],
+[1168560000000,104.62],
+[1168905600000,107.10],
+[1168992000000,104.95],
+[1169078400000,99.07],
+[1169164800000,98.50],
+[1169424000000,96.79],
+[1169510400000,95.70],
+[1169596800000,96.70],
+[1169683200000,96.25],
+[1169769600000,95.38],
+[1170028800000,95.94],
+[1170115200000,95.55],
+[1170201600000,95.73],
+/* Feb 2007 */
+[1170288000000,94.74],
+[1170374400000,94.75],
+[1170633600000,93.94],
+[1170720000000,94.15],
+[1170806400000,96.15],
+[1170892800000,96.18],
+[1170979200000,93.27],
+[1171238400000,94.88],
+[1171324800000,94.63],
+[1171411200000,95.30],
+[1171497600000,95.21],
+[1171584000000,94.83],
+[1171929600000,95.90],
+[1172016000000,99.20],
+[1172102400000,99.51],
+[1172188800000,99.07],
+[1172448000000,98.65],
+[1172534400000,93.93],
+[1172620800000,94.61],
+/* Mar 2007 */
+[1172707200000,87.06],
+[1172793600000,85.41],
+[1173052800000,86.32],
+[1173139200000,88.19],
+[1173225600000,87.72],
+[1173312000000,88.00],
+[1173398400000,87.97],
+[1173657600000,89.87],
+[1173744000000,88.40],
+[1173830400000,90.00],
+[1173916800000,89.57],
+[1174003200000,89.59],
+[1174262400000,91.13],
+[1174348800000,91.48],
+[1174435200000,93.87],
+[1174521600000,93.96],
+[1174608000000,93.52],
+[1174867200000,95.85],
+[1174953600000,95.46],
+[1175040000000,93.24],
+[1175126400000,93.75],
+[1175212800000,92.91],
+/* Apr 2007 */
+[1175472000000,93.65],
+[1175558400000,94.50],
+[1175644800000,94.27],
+[1175731200000,94.68],
+[1176076800000,93.65],
+[1176163200000,94.25],
+[1176249600000,92.59],
+[1176336000000,92.19],
+[1176422400000,90.24],
+[1176681600000,91.43],
+[1176768000000,90.35],
+[1176854400000,90.40],
+[1176940800000,90.27],
+[1177027200000,90.97],
+[1177286400000,93.51],
+[1177372800000,93.24],
+[1177459200000,95.35],
+[1177545600000,98.84],
+[1177632000000,99.92],
+[1177891200000,99.80],
+/* May 2007 */
+[1177977600000,99.47],
+[1178064000000,100.39],
+[1178150400000,100.40],
+[1178236800000,100.81],
+[1178496000000,103.92],
+[1178582400000,105.06],
+[1178668800000,106.88],
+[1178755200000,107.34],
+[1178841600000,108.74],
+[1179100800000,109.36],
+[1179187200000,107.52],
+[1179273600000,107.34],
+[1179360000000,109.44],
+[1179446400000,110.02],
+[1179705600000,111.98],
+[1179792000000,113.54],
+[1179878400000,112.89],
+[1179964800000,110.69],
+[1180051200000,113.62],
+[1180396800000,114.35],
+[1180483200000,118.77],
+[1180569600000,121.19]]
+      }
+   ];
+	Highcharts.stockChart('container3',  {
+		series: series
+	});
+}sky3();
+</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+    <script src="scripts/extras.1.1.0.min.js"></script>
+    <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+    <script src="scripts/app/app-blog-overview.1.1.0.js"></script>
+  </body>
+</html>

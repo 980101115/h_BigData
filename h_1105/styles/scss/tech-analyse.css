@@ -1,0 +1,52 @@
+/*设置科技情报-文献分析的样式*/
+/*左侧导航栏样式*/
+div.nav-wrapper ul.c-sub-sidenav
+{
+	display: none;
+}
+div.nav-wrapper ul.c-sub-sidenav1
+{
+	display: none;
+}
+div.nav-wrapper ul.c-side-nav a.active
+{
+	color: #143EFE;	
+}
+
+div.row.title-bar {
+	height: 30px;width: 100%;margin-top: 10px;
+}
+/*标题*/
+div.row.title-bar div.l-title
+{
+	height: 30px;width: 40%;line-height: 30px;font-size: 20px;margin-left: 50px;
+}
+
+div.row div.g-col
+{
+	display: inline-block;height: 550px; width:45%;margin-left: 20px;margin-top: 10px;
+}
+div.row div.g-col div.g-card-content {
+	height: 450px; width: 95%;margin-top: 10px;
+}
+div.row div.g-col-1
+{
+	display: inline-block;height: 470px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-1 div.g-card-content img{
+	height: 470px; width: 95%;
+}
+div.row div.g-col-2
+{
+	display: inline-block;height: 470px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-2 div.g-card-content img{
+	height: 470px; width: 95%;
+}
+div.row div.g-col-3
+{
+	display: inline-block;height: 610px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-3 div.g-card-content img{
+	height: 610px; width: 95%;
+}

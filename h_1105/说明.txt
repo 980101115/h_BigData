@@ -1,0 +1,24 @@
+网页命名规范：
+index.html  首页
+pub-analy.html   社会舆情分析—个人
+pub-analy2.html   社会舆情分析—机构和个人比较
+keywords-search.html  科技情报--专业文献搜索
+literature-analysis.html  科技情报—文献分析
+art-pages.html       科技情报—消息列表 
+hotwords-neph.html   热词云图---领域云图
+keyword- neph.html   热词云图---关键词云图
+aboutus.html    关于我们
+news-pages.html 新闻列表
+样式设计CSS：style/scss/sidenav.css，style/scss/nepl.css，style/scss/repl.css，
+style/scss/open-windows.css ，style/scss/index-1.css
+
+Js文件：/scripts/sidenav.js
+
+目前未实现：文献分析界面
+
+开发工具文档编写：2019.10.31 改动：新添加style/scss/repl.css，
+style/scss/open-windows.css ，style/scss/index-1.css，art-pages.html，
+修改index.html  首页  ，keywords-search.html  科技情报--专业文献搜索
+
+
+

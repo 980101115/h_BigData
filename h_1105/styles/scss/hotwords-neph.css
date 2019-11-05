@@ -1,0 +1,36 @@
+/*领域热词云图*/
+div.row.title-bar {
+	height: 50px;width: 100%;
+}
+div.row.title-bar div.l-title
+{
+	height: 50px;width: 40%;line-height: 50px;font-size: 20px;margin-left: 50px;
+}
+div.row div.g-col
+{
+	display: inline-block;height: 550px; width:45%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col div.g-card-content img{
+	height: 450px; width: 95%;margin-top: 40px;
+}
+div.row div.g-col-1
+{
+	display: inline-block;height: 470px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-1 div.g-card-content img{
+	height: 470px; width: 95%;
+}
+div.row div.g-col-2
+{
+	display: inline-block;height: 470px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-2 div.g-card-content img{
+	height: 470px; width: 95%;
+}
+div.row div.g-col-3
+{
+	display: inline-block;height: 610px; width:95%;margin-left: 40px;margin-top: 10px;
+}
+div.row div.g-col-3 div.g-card-content img{
+	height: 610px; width: 95%;
+}
